@@ -1,9 +1,5 @@
 import pandas as pd
 
-from insert_head import insert_head
-
-insert_head()
-
 for i in range(1, 225):
     data = pd.read_csv('/Users/soshi/school/study/emoji_anlyze/en_emoji_sentences/en_separate_' + str(i) + '.csv',
                        engine="python", sep='ぉ', quotechar='ぉ',

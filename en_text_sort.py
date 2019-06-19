@@ -1,5 +1,7 @@
 import re
 
+from insert_head import insert_head
+
 replace_emoji_list = []
 count = 0
 with open('/Users/soshi/school/study/emoji_anlyze/emo_list.txt', encoding='utf-8') as file:
@@ -18,3 +20,4 @@ with open('/Users/soshi/school/study/emoji_anlyze/masyorizumi_en_emo.txt', encod
                         '/Users/soshi/school/study/emoji_anlyze/en_emoji_sentences/en_separate_' + str(count) + '.csv',
                         mode='a', encoding='UTF-8') as write_file:
                     write_file.write(sentence_datum.replace('\n', '') + "ぉ" + emoji + "\n")
+
